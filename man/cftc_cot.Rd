@@ -6,14 +6,14 @@
 \title{Bloomberg tickers for various CFTC reports by futures tickers}
 \format{A tibble with 22498 rows and 10 variables:
 \itemize{
-  \item{name: name of the futures series.}
-  \item{asset class: asset class for the underlying futures series; 'climate', 'commodity', 'equity', 'fixed income' or 'currency'.}
-  \item{active contract ticker: active contract ticker for the underlying futures series.}
-  \item{exchange MIC: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-  \item{format: CFTC report format; 'legacy', 'disaggregated', 'supplemental' or 'traders in financial futures'.}
-  \item{underlying: underlying type grouping for reporting, 'futures only' or 'futures & options'.}
-  \item{unit: unit for counts, number of contracts ('contracts'), traders ('traders') or 'total'.}
-  \item{participant: CFTC's trader classification, report specific.
+  \item{\code{name}: name of the futures series.}
+  \item{\code{asset class}: asset class for the underlying futures series; 'climate', 'commodity', 'equity', 'fixed income' or 'currency'.}
+  \item{\code{active contract ticker}: active contract ticker for the underlying futures series.}
+  \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{format}: CFTC report format; 'legacy', 'disaggregated', 'supplemental' or 'traders in financial futures'.}
+  \item{\code{underlying}: underlying type grouping for reporting, 'futures only' or 'futures & options'.}
+  \item{\code{unit}: unit for counts, number of contracts ('contracts'), traders ('traders') or 'total'.}
+  \item{\code{participant}: CFTC's trader classification, report specific.
     \itemize{
       \item{legacy: 'commercial', 'non-commercial', 'non-reportable', 'total'.}
       \item{disaggregated: 'managed money', 'producer/merchant/processor/user', 'swap dealers', 'other reportables'.}
@@ -21,7 +21,7 @@
       \item{traders in financial futures: 'asset manager/institutional', 'dealer/intermediary', 'leveraged funds', 'other reportables'.}
     }
   }
-  \item{position: trader positions, participant specific.
+  \item{\code{position}: trader positions, participant specific.
     \itemize{
       \item{commercial: 'long', 'short', 'net'.}
       \item{non-commercial: 'long', 'short', 'net', 'spreading'.}
@@ -41,7 +41,7 @@
       \item{other reportables: 'long', 'short', 'net', 'spreading'.}
     }
   }
-  \item{ticker: corresponding Bloomberg ticker.}
+  \item{\code{ticker}: corresponding Bloomberg ticker.}
 }}
 \source{
 \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm},

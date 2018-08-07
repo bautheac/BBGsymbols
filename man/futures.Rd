@@ -4,11 +4,11 @@
 \name{futures}
 \alias{futures}
 \title{Bloomberg tickers for various popular futures series}
-\format{A tibble with 109 rows and 7 variables:
+\format{A tibble with 109 rows and 6 variables:
 \itemize{
-  \item{active contract ticker: active contract ticker for the futures series.}
-  \item{asset class: asset class for the underlying futures series; 'commodity', 'currency', 'financial' and 'index'.}
-  \item{sector: underlying instrument sector; asset class specific.
+  \item{\code{active contract ticker}: active contract ticker for the futures series.}
+  \item{\code{asset class}: asset class for the underlying futures series; 'commodity', 'currency', 'financial' and 'index'.}
+  \item{\code{sector}: underlying instrument sector; asset class specific.
     \itemize{
       \item{commodity: 'agriculturals', 'energy', 'metals'.}
       \item{currency: domestic currency.}
@@ -16,7 +16,7 @@
       \item{index: index asset class.}
     }
   }
-  \item{subsector: underlying instrument subsector; asset class specific.
+  \item{\code{subsector}: underlying instrument subsector; asset class specific.
     \itemize{
       \item{commodity:
         \itemize{
@@ -35,8 +35,8 @@
       }
     }
   }
-  \item{exchange MIC: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-  \item{name: corresponding futures series's underlying name.}
+  \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{name}: corresponding futures series's underlying name.}
 }}
 \source{
 Bloomberg.
