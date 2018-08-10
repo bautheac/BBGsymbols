@@ -1,17 +1,17 @@
-#' Bloomberg tickers for various CFTC reports by futures tickers
+#' Bloomberg tickers for various CFTC reports by futures active contract ticker
 #'
 #' @description The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' reports. See 'Details' below.
 #'
 #' @format A tibble with 22498 rows and 10 variables:
 #' \itemize{
 #'   \item{\code{name}: name of the futures series.}
-#'   \item{\code{asset class}: asset class for the underlying futures series; 'climate', 'commodity', 'equity', 'fixed income' or 'currency'.}
+#'   \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}
 #'   \item{\code{active contract ticker}: active contract ticker for the underlying futures series.}
 #'   \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-#'   \item{\code{format}: CFTC report format; 'legacy', 'disaggregated', 'supplemental' or 'traders in financial futures'.}
-#'   \item{\code{underlying}: underlying type grouping for reporting, 'futures only' or 'futures & options'.}
-#'   \item{\code{unit}: unit for counts, number of contracts ('contracts'), traders ('traders') or 'total'.}
-#'   \item{\code{participant}: CFTC's trader classification, report specific.
+#'   \item{\code{format}: CFTC report format ('legacy', 'disaggregated', 'supplemental' or 'traders in financial futures').}
+#'   \item{\code{underlying}: underlying instrument ('futures only' or 'futures & options').}
+#'   \item{\code{unit}: counting unit (number of 'contracts', 'traders' or 'total').}
+#'   \item{\code{participant}: CFTC's trader classification. Report specific:
 #'     \itemize{
 #'       \item{legacy: 'commercial', 'non-commercial', 'non-reportable', 'total'.}
 #'       \item{disaggregated: 'managed money', 'producer/merchant/processor/user', 'swap dealers', 'other reportables'.}
@@ -19,7 +19,7 @@
 #'       \item{traders in financial futures: 'asset manager/institutional', 'dealer/intermediary', 'leveraged funds', 'other reportables'.}
 #'     }
 #'   }
-#'   \item{\code{position}: trader positions, participant specific.
+#'   \item{\code{position}: trader positions. Participant specific.
 #'     \itemize{
 #'       \item{commercial: 'long', 'short', 'net'.}
 #'       \item{non-commercial: 'long', 'short', 'net', 'spreading'.}
@@ -216,7 +216,7 @@
 #'   A trader is determined to be commercial or non-commerical using the following rationale: all trader's reported futures positions in a commodity are
 #'   classifed  as commercial if the trader uses futures contracts in that particular commodity for hedging as defined in the CFTC's regulations (1.3(z)).
 #'
-"cftc_cot"
+"tickers_cftc"
 
 
 
@@ -263,9 +263,64 @@
 #'   \item{\code{name}: corresponding futures series's underlying name.}
 #' }
 #'
-#' @source Bloomberg.
-#'
+#' @source Bloomberg
 #'
 #' @details These tickers are for use in querying data on a Bloomberg terminal.
 #'
-"futures"
+"tickers_futures"
+
+
+#' Roll symbols for Bloomberg futures term structure ticker construction
+#'
+#' @description Helper dataset for Bloomberg futures term structure ticker construction.
+#'   Provides roll type and roll adjustment symbols to use along days and months offsets in constructing Bloomberg futures term structure tickers.
+#'
+#' @format A tibble with 11 rows and 3 variables:
+#' \itemize{
+#'   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
+#'   \item{\code{symbol}: roll type or adjustment symbol.}
+#'   \item{\code{name}: corresponding roll type or adjustment name.}
+#' }
+#'
+#' @source Bloomberg
+#'
+#' @seealso
+#' \itemize{
+#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+#'   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
+#' }
+#'
+#' @details These symbols are for use in constructing Bloomberg futures term structure tickers.
+#'
+"rolls"
+
+
+#' field symbols for Bloomberg tickers
+#'
+#' @description Helper dataset for querying data from Bloomberg.
+#'   Provides field symbols for various security type-data type combinations
+#'
+#' @format A tibble with 5 variables:
+#' \itemize{
+#'   \item{\code{instrument}: underlying financial instrument type (futures, equity, etc.).}
+#'   \item{\code{type}: type of data; instrument specific.
+#'     \itemize{
+#'       \item{futures: market, aggregate}
+#'       \item{equity: market, balance sheet, cash flow statement, income statement, ratios.}
+#'     }
+#'   }
+#'   \item{name: field name.}
+#'   \item{symbol: corresponding Bloomberg field symbol.}
+#'   \item{description: Bloomberg provided description for the corresponding field.}
+#' }
+#'
+#' @source Bloomberg
+#'
+#' @seealso
+#' \itemize{
+#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+##' }
+#'
+#' @details These symbols are for use querying data from Bloomberg.
+#'
+"fields"
