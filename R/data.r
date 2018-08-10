@@ -286,7 +286,7 @@
 #'
 #' @seealso
 #' \itemize{
-#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+# #'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
 #'   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
 #' }
 #'
@@ -316,10 +316,10 @@
 #'
 #' @source Bloomberg
 #'
-#' @seealso
-#' \itemize{
-#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
-##' }
+# #' @seealso
+# #' \itemize{
+# #'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+# #' }
 #'
 #' @details These symbols are for use querying data from Bloomberg.
 #'

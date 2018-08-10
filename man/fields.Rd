@@ -30,9 +30,4 @@ Helper dataset for querying data from Bloomberg.
 \details{
 These symbols are for use querying data from Bloomberg.
 }
-\seealso{
-\itemize{
-  \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
-}
-}
 \keyword{datasets}

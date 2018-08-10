@@ -7,13 +7,13 @@
 \format{A tibble with 22498 rows and 10 variables:
 \itemize{
   \item{\code{name}: name of the futures series.}
-  \item{\code{asset class}: asset class for the underlying futures series; 'climate', 'commodity', 'equity', 'fixed income' or 'currency'.}
+  \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}
   \item{\code{active contract ticker}: active contract ticker for the underlying futures series.}
   \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-  \item{\code{format}: CFTC report format; 'legacy', 'disaggregated', 'supplemental' or 'traders in financial futures'.}
-  \item{\code{underlying}: underlying type grouping for reporting, 'futures only' or 'futures & options'.}
-  \item{\code{unit}: unit for counts, number of contracts ('contracts'), traders ('traders') or 'total'.}
-  \item{\code{participant}: CFTC's trader classification, report specific.
+  \item{\code{format}: CFTC report format ('legacy', 'disaggregated', 'supplemental' or 'traders in financial futures').}
+  \item{\code{underlying}: underlying instrument ('futures only' or 'futures & options').}
+  \item{\code{unit}: counting unit (number of 'contracts', 'traders' or 'total').}
+  \item{\code{participant}: CFTC's trader classification. Report specific:
     \itemize{
       \item{legacy: 'commercial', 'non-commercial', 'non-reportable', 'total'.}
       \item{disaggregated: 'managed money', 'producer/merchant/processor/user', 'swap dealers', 'other reportables'.}
@@ -21,7 +21,7 @@
       \item{traders in financial futures: 'asset manager/institutional', 'dealer/intermediary', 'leveraged funds', 'other reportables'.}
     }
   }
-  \item{\code{position}: trader positions, participant specific.
+  \item{\code{position}: trader positions. Participant specific.
     \itemize{
       \item{commercial: 'long', 'short', 'net'.}
       \item{non-commercial: 'long', 'short', 'net', 'spreading'.}
