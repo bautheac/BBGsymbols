@@ -2,10 +2,8 @@ Package: bbgsymbols
 Title: Usefull Bloomberg tickers conviniently packaged for R users
 Version: 0.0.0.9000
 Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
-Description: Includes Bloomberg tickers for popular futures as well as corresponding tickers for the various CFTC reports.
+Description: A collection of helper datasets for pulling Bloomberg data from Bloomberg.
 Depends: R (>= 3.2.0)
-Suggests:
-  pullit
 License: CC0
 Encoding: UTF-8
 LazyData: no
