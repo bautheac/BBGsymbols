@@ -25,6 +25,7 @@ These symbols are for use in constructing Bloomberg futures term structure ticke
 }
 \seealso{
 \itemize{
+  \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
 }
 }
