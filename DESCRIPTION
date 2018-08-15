@@ -4,6 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
 Description: A collection of helper datasets for pulling Bloomberg data from Bloomberg.
 Depends: R (>= 3.2.0)
+Imports: data.table (>= 1.11.4)
 Suggests: pullit
 Remotes: bautheac/pullit
 License: CC0
