@@ -47,6 +47,7 @@
 #'   \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm},
 #'   \url{http://www.cftc.gov/idc/groups/public/@commitmentsoftraders/documents/file/tfmexplanatorynotes.pdf}
 #'
+#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 #'
 #' @details The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's open interest for markets in which 20 or more traders hold positions equal to or
 #'   above the reporting levels established by the CFTC. A trader must report his or her position if at the daily market close, their position is at or above the CFTC's
@@ -269,36 +270,11 @@
 #'
 #' @details These tickers are for use in querying data on a Bloomberg terminal.
 #'
+#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#'
 #' @importClassesFrom data.table data.table
 #'
 "tickers_futures"
-
-
-#' Roll symbols for Bloomberg futures term structure ticker construction
-#'
-#' @description Helper dataset for Bloomberg futures term structure ticker construction.
-#'   Provides roll type and roll adjustment symbols to use along days and months offsets in constructing Bloomberg futures term structure tickers.
-#'
-#' @format A tibble with 11 rows and 3 variables:
-#' \itemize{
-#'   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
-#'   \item{\code{symbol}: roll type or adjustment symbol.}
-#'   \item{\code{name}: corresponding roll type or adjustment name.}
-#' }
-#'
-#' @source Bloomberg
-#'
-#' @seealso
-#' \itemize{
-#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
-#'   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
-#' }
-#'
-#' @details These symbols are for use in constructing Bloomberg futures term structure tickers.
-#'
-#' @importClassesFrom data.table data.table
-#'
-"rolls"
 
 
 #' field symbols for Bloomberg tickers
@@ -343,13 +319,59 @@
 #'
 #' @source Bloomberg
 #'
-#' @seealso
-#' \itemize{
-#'   \item{\code{pullit} package.}
-#' }
+#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 #'
 #' @details Help querying financial market and book data from bloomberg.
 #'
 #' @importClassesFrom data.table data.table
 #'
 "fields"
+
+
+#' Bloomberg futures delivery month symbols
+#'
+#' @description Lists the conventional letter codes used to specify futures delivery month.
+#'
+#' @format A data.table. Columns include:
+#' \itemize{
+#'   \item{name: month name.}
+#'   \item{symbol: corresponding symbol.}
+#' }
+#'
+#' @source \url{https://www.cmegroup.com/month-codes.html?redirect=/product-codes-listing/month-codes.html}
+#'
+#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#'
+#' @importClassesFrom data.table data.table
+#'
+"months"
+
+
+
+#' Roll symbols for Bloomberg futures term structure ticker construction
+#'
+#' @description Helper dataset for Bloomberg futures term structure ticker construction.
+#'   Provides roll type and roll adjustment symbols to use along days and months offsets in constructing Bloomberg futures term structure tickers.
+#'
+#' @format A tibble with 11 rows and 3 variables:
+#' \itemize{
+#'   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
+#'   \item{\code{symbol}: roll type or adjustment symbol.}
+#'   \item{\code{name}: corresponding roll type or adjustment name.}
+#' }
+#'
+#' @source Bloomberg
+#'
+#' @seealso
+#' \itemize{
+#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+#'   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
+#' }
+#'
+#' @details These symbols are for use in constructing Bloomberg futures term structure tickers.
+#'
+#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#'
+#' @importClassesFrom data.table data.table
+#'
+"rolls"

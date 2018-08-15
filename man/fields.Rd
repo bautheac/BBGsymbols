@@ -52,8 +52,6 @@ Helper dataset for querying data from Bloomberg.
 Help querying financial market and book data from bloomberg.
 }
 \seealso{
-\itemize{
-  \item{\code{pullit} package.}
-}
+\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 }
 \keyword{datasets}

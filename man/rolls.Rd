@@ -28,5 +28,7 @@ These symbols are for use in constructing Bloomberg futures term structure ticke
   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
 }
+
+\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 }
 \keyword{datasets}

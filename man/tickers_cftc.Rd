@@ -223,4 +223,7 @@ The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's o
   A trader is determined to be commercial or non-commerical using the following rationale: all trader's reported futures positions in a commodity are
   classifed  as commercial if the trader uses futures contracts in that particular commodity for hedging as defined in the CFTC's regulations (1.3(z)).
 }
+\seealso{
+\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+}
 \keyword{datasets}

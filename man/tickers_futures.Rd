@@ -51,4 +51,7 @@ commodity, currency, financial and index futures with underlyings from various a
 \details{
 These tickers are for use in querying data on a Bloomberg terminal.
 }
+\seealso{
+\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+}
 \keyword{datasets}
