@@ -4,18 +4,39 @@
 \name{fields}
 \alias{fields}
 \title{field symbols for Bloomberg tickers}
-\format{A tibble with 5 variables:
+\format{A data.table with 6 variables:
 \itemize{
   \item{\code{instrument}: underlying financial instrument type (futures, equity, etc.).}
-  \item{\code{type}: type of data; instrument specific.
+  \item{\code{type}: type of data, instrument specific.
     \itemize{
-      \item{futures: market, aggregate}
-      \item{equity: market, balance sheet, cash flow statement, income statement, ratios.}
+      \item{'futures': 'market', 'aggregate'}
+      \item{'equity': 'market', 'key stats', 'balance sheet', 'cash flow statement', 'income statement', 'ratios'.}
+    }
+  }
+  \item{\code{section}: for financial book data fields, book data section; book specific.
+    \itemize{
+      \item{'balance sheet': 'assets', 'liabilities'}
+      \item{'cash flow statement': 'operating', 'investing', 'financing', 'total'.}
+      \item{'ratios': 'profitability', 'credit', 'liquidity', 'working capital'.}
+    }
+  }
+  \item{\code{subsection}: for financial book data fields, book data subsection; book & section specific.
+    \itemize{
+      \item{'balance sheet':
+        \itemize{
+          \item{'assets': 'current', 'long term', 'total'.}
+          \item{'liabilities': 'debt', 'equity', 'total'.}
+        }
+      }
+      \item{'ratios':
+        \itemize{
+          \item{'profitability': 'returns', 'margins', 'additional'.}
+        }
+      }
     }
   }
   \item{name: field name.}
-  \item{symbol: corresponding Bloomberg field symbol.}
-  \item{description: Bloomberg provided description for the corresponding field.}
+  \item{symbol: corresponding Bloomberg data field symbol.}
 }}
 \source{
 Bloomberg
@@ -28,11 +49,11 @@ Helper dataset for querying data from Bloomberg.
   Provides field symbols for various security type-data type combinations
 }
 \details{
-These symbols are for use querying data from Bloomberg.
+Help querying financial market and book data from bloomberg.
 }
 \seealso{
 \itemize{
-  \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
+  \item{\code{pullit} package.}
 }
 }
 \keyword{datasets}
