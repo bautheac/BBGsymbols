@@ -216,6 +216,8 @@
 #'   A trader is determined to be commercial or non-commerical using the following rationale: all trader's reported futures positions in a commodity are
 #'   classifed  as commercial if the trader uses futures contracts in that particular commodity for hedging as defined in the CFTC's regulations (1.3(z)).
 #'
+#' @importClassesFrom data.table data.table
+#'
 "tickers_cftc"
 
 
@@ -267,6 +269,8 @@
 #'
 #' @details These tickers are for use in querying data on a Bloomberg terminal.
 #'
+#' @importClassesFrom data.table data.table
+#'
 "tickers_futures"
 
 
@@ -291,6 +295,8 @@
 #' }
 #'
 #' @details These symbols are for use in constructing Bloomberg futures term structure tickers.
+#'
+#' @importClassesFrom data.table data.table
 #'
 "rolls"
 
@@ -322,5 +328,7 @@
 #' }
 #'
 #' @details These symbols are for use querying data from Bloomberg.
+#'
+#' @importClassesFrom data.table data.table
 #'
 "fields"
