@@ -6,7 +6,7 @@
 \title{Bloomberg tickers for various popular futures series}
 \format{A tibble with 109 rows and 6 variables:
 \itemize{
-  \item{\code{active contract ticker}: active contract ticker for the futures series.}
+  \item{\code{ticker}: active contract ticker for the futures series.}
   \item{\code{asset class}: asset class for the underlying futures series; 'commodity', 'currency', 'financial' and 'index'.}
   \item{\code{sector}: underlying instrument sector; asset class specific.
     \itemize{
@@ -35,7 +35,7 @@
       }
     }
   }
-  \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
   \item{\code{name}: corresponding futures series's underlying name.}
 }}
 \source{
