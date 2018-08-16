@@ -9,7 +9,7 @@
   \item{\code{name}: name of the futures series.}
   \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}
   \item{\code{active contract ticker}: active contract ticker for the underlying futures series.}
-  \item{\code{exchange MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
   \item{\code{format}: CFTC report format ('legacy', 'disaggregated', 'supplemental' or 'traders in financial futures').}
   \item{\code{underlying}: underlying instrument ('futures only' or 'futures & options').}
   \item{\code{unit}: counting unit (number of 'contracts', 'traders' or 'total').}
