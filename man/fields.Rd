@@ -4,7 +4,7 @@
 \name{fields}
 \alias{fields}
 \title{field symbols for Bloomberg tickers}
-\format{A data.table with 6 variables:
+\format{A data.table. Columns include:
 \itemize{
   \item{\code{instrument}: underlying financial instrument type (futures, equity, etc.).}
   \item{\code{type}: type of data, instrument specific.

@@ -4,7 +4,7 @@
 \name{tickers_cftc}
 \alias{tickers_cftc}
 \title{Bloomberg tickers for various CFTC reports by futures active contract ticker}
-\format{A tibble with 22498 rows and 10 variables:
+\format{A data.table. Columns include:
 \itemize{
   \item{\code{name}: name of the futures series.}
   \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}

@@ -4,7 +4,7 @@
 \name{rolls}
 \alias{rolls}
 \title{Roll symbols for Bloomberg futures term structure ticker construction}
-\format{A tibble with 11 rows and 3 variables:
+\format{A data.table. Columns include:
 \itemize{
   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
   \item{\code{symbol}: roll type or adjustment symbol.}

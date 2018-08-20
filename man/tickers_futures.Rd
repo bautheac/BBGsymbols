@@ -4,9 +4,10 @@
 \name{tickers_futures}
 \alias{tickers_futures}
 \title{Bloomberg tickers for various popular futures series}
-\format{A tibble with 109 rows and 6 variables:
+\format{A data.table. Columns include:
 \itemize{
   \item{\code{ticker}: active contract ticker for the futures series.}
+  \item{\code{name}: corresponding futures series's underlying name.}
   \item{\code{asset class}: asset class for the underlying futures series; 'commodity', 'currency', 'financial' and 'index'.}
   \item{\code{sector}: underlying instrument sector; asset class specific.
     \itemize{
@@ -35,8 +36,13 @@
       }
     }
   }
+  \item{\code{length}: length of the term structure for the futures series (number of contracts).}
   \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-  \item{\code{name}: corresponding futures series's underlying name.}
+  \item{\code{currency}: currency for observed price variables.}
+  \item{\code{FIGI}: Financial Instrument Global Identifier. Twelve character, alphanumeric identifier. The first 2 characters are upper-case consonants
+    (including "Y"), the third character is the upper-case "G", characters 4 -11 are any upper-case consonant (including "Y") or integer between 0 and 9,
+    and the last character is a check-digit. An identifier is assigned to instruments of all asset classes, is unique to an individual instrument and once
+    issued will not change for an instrument. For equity instruments an identifier is issued per instrument per trading venue.}
 }}
 \source{
 Bloomberg
