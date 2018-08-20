@@ -5,8 +5,14 @@ Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = 
 Description: A collection of helper datasets for pulling Bloomberg data from Bloomberg.
 Depends: R (>= 3.2.0)
 Imports: data.table (>= 1.11.4)
-Suggests: pullit
-Remotes: bautheac/pullit
+Suggests: 
+  pullit,
+  storethat,
+  factorem
+Remotes: 
+  bautheac/pullit,
+  bautheac/storethat,
+  bautheac/factorem
 License: CC0
 Encoding: UTF-8
 LazyData: no

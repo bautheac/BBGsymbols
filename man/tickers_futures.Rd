@@ -36,7 +36,7 @@
       }
     }
   }
-  \item{\code{length}: length of the term structure for the futures series (number of contracts).}
+  \item{\code{term structure length}: length of the term structure for the futures series (number of contracts).}
   \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
   \item{\code{currency}: currency for observed price variables.}
   \item{\code{FIGI}: Financial Instrument Global Identifier. Twelve character, alphanumeric identifier. The first 2 characters are upper-case consonants
