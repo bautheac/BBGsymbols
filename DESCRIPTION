@@ -1,4 +1,4 @@
-Package: bbgsymbols
+Package: BBGsymbols
 Title: Usefull Bloomberg tickers conviniently packaged for R users
 Version: 0.0.0.9000
 Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))

@@ -3,40 +3,14 @@
 \docType{data}
 \name{fields}
 \alias{fields}
-\title{field symbols for Bloomberg tickers}
-\format{A data.table. Columns include:
+\title{Field symbols for Bloomberg financial data}
+\format{A \linkS4class{data.table}. Columns include:
 \itemize{
-  \item{\code{instrument}: underlying financial instrument type (futures, equity, etc.).}
-  \item{\code{type}: type of data, instrument specific.
-    \itemize{
-      \item{'futures': 'market', 'aggregate'}
-      \item{'equity': 'market', 'key stats', 'balance sheet', 'cash flow statement', 'income statement', 'ratios'.}
-    }
-  }
-  \item{\code{section}: for financial book data fields, book data section; book specific.
-    \itemize{
-      \item{'balance sheet': 'assets', 'liabilities'}
-      \item{'cash flow statement': 'operating', 'investing', 'financing', 'total'.}
-      \item{'ratios': 'profitability', 'credit', 'liquidity', 'working capital'.}
-    }
-  }
-  \item{\code{subsection}: for financial book data fields, book data subsection; book & section specific.
-    \itemize{
-      \item{'balance sheet':
-        \itemize{
-          \item{'assets': 'current', 'long term', 'total'.}
-          \item{'liabilities': 'debt', 'equity', 'total'.}
-        }
-      }
-      \item{'ratios':
-        \itemize{
-          \item{'profitability': 'returns', 'margins', 'additional'.}
-        }
-      }
-    }
-  }
-  \item{name: field name.}
-  \item{symbol: corresponding Bloomberg data field symbol.}
+  \item{\code{instrument}: underlying financial instrument type (futures, equity, fund, etc.).}
+  \item{\code{book}: data book.}
+  \item{\code{type:subsection}: data classification elements.}
+  \item{\code{name}: field name.}
+  \item{\code{symbol}: corresponding Bloomberg data field symbol.}
 }}
 \source{
 Bloomberg
@@ -45,13 +19,15 @@ Bloomberg
 fields
 }
 \description{
-Helper dataset for querying data from Bloomberg.
+Helper dataset for working with Bloomberg in R.
   Provides field symbols for various security type-data type combinations
 }
-\details{
-Help querying financial market and book data from bloomberg.
-}
 \seealso{
-\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+\itemize{
+    \item{Data field search monitor on a Bloomberg terminal.}
+    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+    \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+  }
 }
 \keyword{datasets}

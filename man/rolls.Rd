@@ -3,8 +3,8 @@
 \docType{data}
 \name{rolls}
 \alias{rolls}
-\title{Roll symbols for Bloomberg futures term structure ticker construction}
-\format{A data.table. Columns include:
+\title{Roll symbols for futures term structure Bloomberg ticker construction}
+\format{A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
   \item{\code{symbol}: roll type or adjustment symbol.}
@@ -18,17 +18,16 @@ rolls
 }
 \description{
 Helper dataset for Bloomberg futures term structure ticker construction.
-  Provides roll type and roll adjustment symbols to use along days and months offsets in constructing Bloomberg futures term structure tickers.
-}
-\details{
-These symbols are for use in constructing Bloomberg futures term structure tickers.
+  Provides roll type and roll adjustment symbols to use along days and months offsets in
+  constructing Bloomberg futures term structure tickers.
 }
 \seealso{
 \itemize{
-  \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
-  \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
+  \item{function \code{\link[pullit]{futures_ticker}} in package \href{https://github.com/bautheac/pullit/}{\pkg{pullit}}.}
+  \item{"GFUT <GO>" &/or "DOCS #2072138 <GO>" on a Bloomberg terminal.}
+  \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite in general, in particular the
+    \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+    \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 }
-
-\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 }
 \keyword{datasets}

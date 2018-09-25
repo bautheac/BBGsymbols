@@ -2,7 +2,7 @@
 #'
 #' @description The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' reports. See 'Details' below.
 #'
-#' @format A data.table. Columns include:
+#' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{name}: name of the futures series.}
 #'   \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}
@@ -43,11 +43,19 @@
 #' }
 #'
 #' @source
-#'   \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm},
-#'   \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm},
-#'   \url{http://www.cftc.gov/idc/groups/public/@commitmentsoftraders/documents/file/tfmexplanatorynotes.pdf}
+#'   \itemize{
+#'     \item{\url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm}}
+#'     \item{\url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm}}
+#'     \item{\url{http://www.cftc.gov/idc/groups/public/@commitmentsoftraders/documents/file/tfmexplanatorynotes.pdf}}
+#'   }
 #'
-#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#' @seealso
+#'   \itemize{
+#'     \item{"CFTC <GO>" on a Bloomberg terminal.}
+#'     \item{\href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages
+#'     from the \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite.}
+#'   }
 #'
 #' @details The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's open interest for markets in which 20 or more traders hold positions equal to or
 #'   above the reporting levels established by the CFTC. A trader must report his or her position if at the daily market close, their position is at or above the CFTC's
@@ -219,7 +227,7 @@
 #'
 #' @importClassesFrom data.table data.table
 #'
-"tickers_cftc"
+"tickers_CFTC"
 
 
 
@@ -231,7 +239,7 @@
 #' @description The dataset includes Bloomberg active contract tickers for several popular futures series including
 #' commodity, currency, financial and index futures with underlyings from various asset classes.
 #'
-#' @format A data.table. Columns include:
+#' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{ticker}: active contract ticker for the futures series.}
 #'   \item{\code{name}: corresponding futures series's underlying name.}
@@ -263,82 +271,69 @@
 #'       }
 #'     }
 #'   }
-#'   \item{\code{term structure length}: length of the term structure for the futures series (number of contracts).}
-#'   \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
 #'   \item{\code{currency}: currency for observed price variables.}
+#'   \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+#'   \item{\code{term structure length}: length of the term structure for the futures series (number of contracts).}
+#'   \item{\code{contract size}: size of the corresponding contract with units specified in \code{trading unit} below.}
+#'   \item{\code{point value}: change in contract value for one point change in price.}
+#'   \item{\code{tick size}: minimum price fluctuation.}
+#'   \item{\code{tick value}: change in price resulting for a minimum price fluctuation described above.}
 #'   \item{\code{FIGI}: Financial Instrument Global Identifier. Twelve character, alphanumeric identifier. The first 2 characters are upper-case consonants
 #'     (including "Y"), the third character is the upper-case "G", characters 4 -11 are any upper-case consonant (including "Y") or integer between 0 and 9,
 #'     and the last character is a check-digit. An identifier is assigned to instruments of all asset classes, is unique to an individual instrument and once
 #'     issued will not change for an instrument. For equity instruments an identifier is issued per instrument per trading venue.}
+#'   \item{\code{description}: descriptive elements for the corresponding futures series.}
 #' }
 #'
 #' @source Bloomberg
 #'
-#' @details These tickers are for use in querying data on a Bloomberg terminal.
-#'
-#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#' @seealso
+#'   \itemize{
+#'     \item{"GFUT <GO>" on a Bloomberg terminal.}
+#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+#'   }
 #'
 #' @importClassesFrom data.table data.table
 #'
 "tickers_futures"
 
 
-#' field symbols for Bloomberg tickers
+#' Field symbols for Bloomberg financial data
 #'
-#' @description Helper dataset for querying data from Bloomberg.
+#' @description Helper dataset for working with Bloomberg in R.
 #'   Provides field symbols for various security type-data type combinations
 #'
-#' @format A data.table. Columns include:
+#' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{
-#'   \item{\code{instrument}: underlying financial instrument type (futures, equity, etc.).}
-#'   \item{\code{type}: type of data, instrument specific.
-#'     \itemize{
-#'       \item{'futures': 'market', 'aggregate'}
-#'       \item{'equity': 'market', 'key stats', 'balance sheet', 'cash flow statement', 'income statement', 'ratios'.}
-#'     }
-#'   }
-#'   \item{\code{section}: for financial book data fields, book data section; book specific.
-#'     \itemize{
-#'       \item{'balance sheet': 'assets', 'liabilities'}
-#'       \item{'cash flow statement': 'operating', 'investing', 'financing', 'total'.}
-#'       \item{'ratios': 'profitability', 'credit', 'liquidity', 'working capital'.}
-#'     }
-#'   }
-#'   \item{\code{subsection}: for financial book data fields, book data subsection; book & section specific.
-#'     \itemize{
-#'       \item{'balance sheet':
-#'         \itemize{
-#'           \item{'assets': 'current', 'long term', 'total'.}
-#'           \item{'liabilities': 'debt', 'equity', 'total'.}
-#'         }
-#'       }
-#'       \item{'ratios':
-#'         \itemize{
-#'           \item{'profitability': 'returns', 'margins', 'additional'.}
-#'         }
-#'       }
-#'     }
-#'   }
-#'   \item{name: field name.}
-#'   \item{symbol: corresponding Bloomberg data field symbol.}
+#'   \item{\code{instrument}: underlying financial instrument type (futures, equity, fund, etc.).}
+#'   \item{\code{book}: data book.}
+#'   \item{\code{type:subsection}: data classification elements.}
+#'   \item{\code{name}: field name.}
+#'   \item{\code{symbol}: corresponding Bloomberg data field symbol.}
 #' }
 #'
 #' @source Bloomberg
 #'
-#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
-#'
-#' @details Help querying financial market and book data from bloomberg.
+#' @seealso
+#'   \itemize{
+#'     \item{Data field search monitor on a Bloomberg terminal.}
+#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+#'   }
 #'
 #' @importClassesFrom data.table data.table
 #'
 "fields"
 
 
-#' Bloomberg futures delivery month symbols
+#' Futures delivery month symbols
 #'
-#' @description Lists the conventional letter codes used to specify futures delivery month.
+#' @description Lists the Street convention symbols for futures delivery month.
 #'
-#' @format A data.table. Columns include:
+#' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{
 #'   \item{name: month name.}
 #'   \item{symbol: corresponding symbol.}
@@ -346,7 +341,12 @@
 #'
 #' @source \url{https://www.cmegroup.com/month-codes.html?redirect=/product-codes-listing/month-codes.html}
 #'
-#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+#' @seealso
+#'   \itemize{
+#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+#'   }
 #'
 #' @importClassesFrom data.table data.table
 #'
@@ -354,12 +354,13 @@
 
 
 
-#' Roll symbols for Bloomberg futures term structure ticker construction
+#' Roll symbols for futures term structure Bloomberg ticker construction
 #'
 #' @description Helper dataset for Bloomberg futures term structure ticker construction.
-#'   Provides roll type and roll adjustment symbols to use along days and months offsets in constructing Bloomberg futures term structure tickers.
+#'   Provides roll type and roll adjustment symbols to use along days and months offsets in
+#'   constructing Bloomberg futures term structure tickers.
 #'
-#' @format A data.table. Columns include:
+#' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
 #'   \item{\code{symbol}: roll type or adjustment symbol.}
@@ -370,13 +371,13 @@
 #'
 #' @seealso
 #' \itemize{
-#'   \item{function \code{\link[pullit]{futures_ticker}} in package \code{pullit}.}
-#'   \item{Hit 'DOCS #2072138 <GO>' on a Bloomberg terminal to learn more about the Bloomberg rolling conventions.}
+#'   \item{function \code{\link[pullit]{futures_ticker}} in package \href{https://github.com/bautheac/pullit/}{\pkg{pullit}}.}
+#'   \item{"GFUT <GO>" &/or "DOCS #2072138 <GO>" on a Bloomberg terminal.}
+#'   \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite in general, in particular the
+#'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #' }
 #'
-#' @details These symbols are for use in constructing Bloomberg futures term structure tickers.
-#'
-#' @seealso \code{pullit} and \code{storethat} packages from the \code{finRes} universe.
 #'
 #' @importClassesFrom data.table data.table
 #'

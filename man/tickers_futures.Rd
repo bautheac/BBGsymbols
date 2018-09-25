@@ -4,7 +4,7 @@
 \name{tickers_futures}
 \alias{tickers_futures}
 \title{Bloomberg tickers for various popular futures series}
-\format{A data.table. Columns include:
+\format{A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{ticker}: active contract ticker for the futures series.}
   \item{\code{name}: corresponding futures series's underlying name.}
@@ -36,13 +36,18 @@
       }
     }
   }
-  \item{\code{term structure length}: length of the term structure for the futures series (number of contracts).}
-  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
   \item{\code{currency}: currency for observed price variables.}
+  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{term structure length}: length of the term structure for the futures series (number of contracts).}
+  \item{\code{contract size}: size of the corresponding contract with units specified in \code{trading unit} below.}
+  \item{\code{point value}: change in contract value for one point change in price.}
+  \item{\code{tick size}: minimum price fluctuation.}
+  \item{\code{tick value}: change in price resulting for a minimum price fluctuation described above.}
   \item{\code{FIGI}: Financial Instrument Global Identifier. Twelve character, alphanumeric identifier. The first 2 characters are upper-case consonants
     (including "Y"), the third character is the upper-case "G", characters 4 -11 are any upper-case consonant (including "Y") or integer between 0 and 9,
     and the last character is a check-digit. An identifier is assigned to instruments of all asset classes, is unique to an individual instrument and once
     issued will not change for an instrument. For equity instruments an identifier is issued per instrument per trading venue.}
+  \item{\code{description}: descriptive elements for the corresponding futures series.}
 }}
 \source{
 Bloomberg
@@ -54,10 +59,12 @@ tickers_futures
 The dataset includes Bloomberg active contract tickers for several popular futures series including
 commodity, currency, financial and index futures with underlyings from various asset classes.
 }
-\details{
-These tickers are for use in querying data on a Bloomberg terminal.
-}
 \seealso{
-\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+\itemize{
+    \item{"GFUT <GO>" on a Bloomberg terminal.}
+    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+    \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+  }
 }
 \keyword{datasets}

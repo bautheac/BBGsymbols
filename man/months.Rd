@@ -3,8 +3,8 @@
 \docType{data}
 \name{months}
 \alias{months}
-\title{Bloomberg futures delivery month symbols}
-\format{A data.table. Columns include:
+\title{Futures delivery month symbols}
+\format{A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{name: month name.}
   \item{symbol: corresponding symbol.}
@@ -16,9 +16,13 @@
 months
 }
 \description{
-Lists the conventional letter codes used to specify futures delivery month.
+Lists the Street convention symbols for futures delivery month.
 }
 \seealso{
-\code{pullit} and \code{storethat} packages from the \code{finRes} universe.
+\itemize{
+    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+    \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
+  }
 }
 \keyword{datasets}
