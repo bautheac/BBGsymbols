@@ -6,13 +6,13 @@ Description: A collection of helper datasets for working with Bloomberg financia
 Depends: R (>= 3.2.0)
 Imports: data.table (>= 1.11.4)
 Suggests:
-  finRes,
-  pullit,
-  storethat
+    finRes,
+    pullit,
+    storethat
 Remotes: 
-  bautheac/finRes,
-  bautheac/pullit,
-  bautheac/storethat,
+    bautheac/finRes,
+    bautheac/pullit,
+    bautheac/storethat,
 License: CC0
 Encoding: UTF-8
 LazyData: no
