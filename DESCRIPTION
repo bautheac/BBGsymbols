@@ -10,7 +10,7 @@ Suggests:
     storethat
 Remotes: 
     bautheac/pullit,
-    bautheac/storethat,
+    bautheac/storethat
 License: CC0
 Encoding: UTF-8
 LazyData: no
