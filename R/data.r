@@ -1,8 +1,8 @@
-#' Bloomberg position data tickers for a number of futures series as reported by the US
-#'   Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports
+#' US CFTC futures position Bloomberg tickers
 #'
-#' @description The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated',
-#'   'supplemental' and 'traders in financial futures' reports. See 'Details' section below.
+#' @description The dataset includes Bloomberg tickers for the US Commodity Futures
+#'   Trading Commission (CFTC)'s 'legacy', 'disaggregated', 'supplemental' and 'traders
+#'   in financial futures' reports. See 'Details' section below.
 #'
 #' @format A \linkS4class{data.table}. Columns include:
 #' \itemize{

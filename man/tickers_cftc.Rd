@@ -3,8 +3,7 @@
 \docType{data}
 \name{tickers_CFTC}
 \alias{tickers_CFTC}
-\title{Bloomberg position data tickers for a number of futures series as reported by the US
-  Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports}
+\title{US CFTC futures position Bloomberg tickers}
 \format{A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{name}: name of the futures series.}
@@ -62,8 +61,9 @@
 tickers_CFTC
 }
 \description{
-The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated',
-  'supplemental' and 'traders in financial futures' reports. See 'Details' section below.
+The dataset includes Bloomberg tickers for the US Commodity Futures
+  Trading Commission (CFTC)'s 'legacy', 'disaggregated', 'supplemental' and 'traders
+  in financial futures' reports. See 'Details' section below.
 }
 \details{
 The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's

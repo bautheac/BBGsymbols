@@ -11,8 +11,8 @@ A collection of helper datasets for working with Bloomberg financial data in R.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/bautheac/bbgsymbols}
-  \item Report bugs at \url{https://github.com/bautheac/bbgsymbols/issues}
+  \item \url{https://bautheac.github.oi/BBGsymbols}
+  \item Report bugs at \url{https://github.com/bautheac/BBGsymbols/issues}
 }
 
 }

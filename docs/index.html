@@ -45,14 +45,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/bautheac/bbgsymbols">
-    <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
+<ul class="nav navbar-nav navbar-right"></ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -138,32 +131,25 @@
 <a href="#tickers_cftc" class="anchor"></a>tickers_CFTC</h3>
 <p>The ‘tickers_CFTC’ dataset gathers Bloomberg position data tickers for a number of futures series as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the ‘legacy’, ‘disaggregated’, ‘supplemental’ and ‘traders in financial futures’ (TFF) reports. See <code><a href="reference/tickers_CFTC.html">?tickers_CFTC</a></code> for details.</p>
 <p>Dataset excerpt:</p>
-<pre><code>#&gt;                                        name asset class
-#&gt; 1: California Carbon Allowance Vintage 2014     climate
-#&gt; 2: California Carbon Allowance Vintage 2014     climate
-#&gt; 3: California Carbon Allowance Vintage 2014     climate
-#&gt; 4: California Carbon Allowance Vintage 2014     climate
-#&gt; 5: California Carbon Allowance Vintage 2014     climate
-#&gt; 6: California Carbon Allowance Vintage 2014     climate
-#&gt;    active contract ticker  MIC        format        underlying      unit
-#&gt; 1:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt; 2:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt; 3:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt; 4:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt; 5:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt; 6:                   &lt;NA&gt; IFUS disaggregated futures &amp; options contracts
-#&gt;          participant  position         ticker
-#&gt; 1:     managed money      long CC21DMML Index
-#&gt; 2:     managed money       net CC21DMMN Index
-#&gt; 3:     managed money     short CC21DMMS Index
-#&gt; 4:     managed money spreading CC21DMMD Index
-#&gt; 5: other reportables      long CC21DORL Index
-#&gt; 6: other reportables       net CC21DORN Index</code></pre>
+<pre><code>#&gt;                    name  asset class active contract ticker  MIC format
+#&gt; 1: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt; 2: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt; 3: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt; 4: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt; 5: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt; 6: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
+#&gt;      underlying    unit    participant  position         ticker
+#&gt; 1: futures only traders non-commercial      long IMM11TNL Index
+#&gt; 2: futures only traders non-commercial     short IMM11TNS Index
+#&gt; 3: futures only traders non-commercial spreading IMM11TNP Index
+#&gt; 4: futures only traders          total      long IMM11TTL Index
+#&gt; 5: futures only traders          total     short IMM11TTS Index
+#&gt; 6: futures only traders          total     total IMM11TTO Index</code></pre>
 </div>
 <div id="tickers_futures" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tickers_futures" class="anchor"></a>tickers_futures</h3>
-<p>The ‘tickers_futures’ dataset gathers futures active contract Bloomberg tickers for several popular futures series including commodity, currency, financial as well as index futures with underlyings from various asset classes.</p>
+<p>The ‘tickers_futures’ dataset gathers futures active contract Bloomberg tickers as well as a collection of qualitative information for several popular futures series including commodity, currency, financial and index futures with underlyings from various asset classes.</p>
 <p>Dataset excerpt:</p>
 <pre><code>#&gt;        ticker                                         name asset class
 #&gt; 1 BSDA Comdty Carbon allowance - California - vintage 2016     climate
@@ -206,9 +192,7 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/bautheac/bbgsymbols">https://​github.com/​bautheac/​bbgsymbols</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/bautheac/bbgsymbols/issues">https://​github.com/​bautheac/​bbgsymbols/​issues</a>
+<li>Report a bug at <br><a href="https://github.com/bautheac/BBGsymbols/issues">https://​github.com/​bautheac/​BBGsymbols/​issues</a>
 </li>
 </ul>
 </div>
