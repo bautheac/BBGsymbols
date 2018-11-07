@@ -14,7 +14,7 @@ output: github_document
 ```{r, `load`, echo = FALSE, warning = FALSE}
 library(BBGsymbols)
 
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.path = "README-")
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, comment = "#>", fig.path = "README-")
 data(list = c("fields", "months", "rolls", "tickers_CFTC", "tickers_futures"), package = "BBGsymbols")
 ```
 
@@ -22,15 +22,15 @@ data(list = c("fields", "months", "rolls", "tickers_CFTC", "tickers_futures"), p
   
 ## BBGsymbols  
 
-BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. It can be installed from [github](https://github.com/bautheac/BBGsymbols/) using: `devtools::install_github("bautheac/BBGsymbols")`.
+BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. Install from [github](https://github.com/bautheac/BBGsymbols/) with: `devtools::install_github("bautheac/BBGsymbols")`.
 
 
 ### fields
 
-The 'fields' dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include 'equity', refering to any equity like security, 'fund' encompassing any money managing entity and 'futures' covering the futures markets. The author welcomes any pull request that could contribute to expand the current coverage.  
+The 'fields' dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include 'equity', refering to any equity like security, 'fund' encompassing any money managing entity and 'futures' covering the futures markets. The author welcomes pull requests that could help expanding the current coverage.  
 
 Dataset excerpt:  
-```{r `fields`, echo = FALSE}
+```{r `fields`}
 head(fields)
 ```
 
@@ -40,7 +40,7 @@ head(fields)
 The 'months' dataset details the symbols used to refer to calendar months in Bloomberg and financial markets in general. It is particularly useful when working with financial deriviative instruments such as futures contracts.  
  
 Dataset excerpt:  
-```{r `months`, echo = FALSE}
+```{r `months`}
 head(months)
 ```
 
@@ -50,17 +50,16 @@ head(months)
 The 'rolls' dataset details the symbols used to refer to the various roll types and adjustments available in Bloomberg when working with futures term structure contracts. These symbols can be used to construct bespoke tickers that allow the user to query Bloomberg for futures term structure data with the desired roll characteristics.
 
 Dataset excerpt:  
-```{r `rolls`, echo = FALSE}
+```{r `rolls`}
 head(rolls)
 ```
 
 
 ### tickers_CFTC
 
-The 'tickers_CFTC' dataset gathers Bloomberg position data tickers for a number of futures series as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_CFTC` for details.  
-
+The 'tickers_CFTC' dataset gathers Bloomberg position data tickers for a number of futures series. These tickers allow direct retrieval from Bloomberg via pullit of corresponding position data as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_CFTC` for details.
 Dataset excerpt:  
-```{r `tickers_CFTC`, echo = FALSE}
+```{r `tickers_CFTC`}
 tail(tickers_CFTC)
 ```
 
@@ -70,7 +69,7 @@ tail(tickers_CFTC)
 The 'tickers_futures' dataset gathers futures active contract Bloomberg tickers as well as a collection of qualitative information for several popular futures series including commodity, currency, financial and index futures with underlyings from various asset classes.  
 
 Dataset excerpt:  
-```{r `tickers_futures`, echo = FALSE}
+```{r `tickers_futures`}
 head(tickers_futures)
 ```
 

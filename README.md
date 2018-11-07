@@ -14,8 +14,8 @@ Status](https://ci.appveyor.com/api/projects/status/github/bautheac/BBGsymbols?b
 ## BBGsymbols
 
 BBGsymbols provides a collection of Bloomberg related helper datasets
-conveniently packaged for consumption in R. It can be installed from
-[github](https://github.com/bautheac/BBGsymbols/) using:
+conveniently packaged for consumption in R. Install from
+[github](https://github.com/bautheac/BBGsymbols/) with:
 `devtools::install_github("bautheac/BBGsymbols")`.
 
 ### fields
@@ -29,8 +29,7 @@ research or more applied work in finance and financial economics.
 Financial instruments covered at the time of writting include ‘equity’,
 refering to any equity like security, ‘fund’ encompassing any money
 managing entity and ‘futures’ covering the futures markets. The author
-welcomes any pull request that could contribute to expand the current
-coverage.
+welcomes pull requests that could help expanding the current coverage.
 
 Dataset
     excerpt:
@@ -102,12 +101,12 @@ Dataset excerpt:
 ### tickers\_CFTC
 
 The ‘tickers\_CFTC’ dataset gathers Bloomberg position data tickers for
-a number of futures series as reported by the US Commodity Futures
-Trading Commission (CFTC) in a collection of weekly market reports
-including the ‘legacy’, ‘disaggregated’, ‘supplemental’ and ‘traders in
-financial futures’ (TFF) reports. See `?tickers_CFTC` for details.
-
-Dataset
+a number of futures series. These tickers allow direct retrieval from
+Bloomberg via pullit of corresponding position data as reported by the
+US Commodity Futures Trading Commission (CFTC) in a collection of weekly
+market reports including the ‘legacy’, ‘disaggregated’, ‘supplemental’
+and ‘traders in financial futures’ (TFF) reports. See `?tickers_CFTC`
+for details. Dataset
     excerpt:
 
     #>                    name  asset class active contract ticker  MIC format

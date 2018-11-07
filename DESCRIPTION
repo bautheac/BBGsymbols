@@ -5,11 +5,9 @@ Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = 
 Description: A collection of helper datasets for working with Bloomberg financial data in R.
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
-Suggests: finRes
-Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 URL: https://bautheac.github.oi/BBGsymbols
 BugReports: https://github.com/bautheac/BBGsymbols/issues
