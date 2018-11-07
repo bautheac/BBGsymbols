@@ -14,8 +14,8 @@ Status](https://ci.appveyor.com/api/projects/status/github/bautheac/BBGsymbols?b
 ## BBGsymbols
 
 BBGsymbols provides a collection of Bloomberg related helper datasets
-conveniently packaged for consumption in R. It can be installed from
-[github](https://github.com/bautheac/BBGsymbols/) using:
+conveniently packaged for consumption in R. Install from
+[github](https://github.com/bautheac/BBGsymbols/) with:
 `devtools::install_github("bautheac/BBGsymbols")`.
 
 ### fields
@@ -29,8 +29,7 @@ research or more applied work in finance and financial economics.
 Financial instruments covered at the time of writting include ‘equity’,
 refering to any equity like security, ‘fund’ encompassing any money
 managing entity and ‘futures’ covering the futures markets. The author
-welcomes any pull request that could contribute to expand the current
-coverage.
+welcomes pull requests that could help expanding the current coverage.
 
 Dataset
     excerpt:
