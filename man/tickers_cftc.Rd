@@ -3,22 +3,30 @@
 \docType{data}
 \name{tickers_CFTC}
 \alias{tickers_CFTC}
-\title{Bloomberg tickers for various CFTC reports by futures active contract ticker}
+\title{Bloomberg position data tickers for a number of futures series as reported by the US
+  Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports}
 \format{A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{name}: name of the futures series.}
-  \item{\code{asset class}: asset class for the underlying futures series ('climate', 'commodity', 'equity', 'fixed income' or 'currency').}
-  \item{\code{active contract ticker}: active contract ticker for the underlying futures series.}
-  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC). Identifies the exchange where the corresponding futures series trades.}
-  \item{\code{format}: CFTC report format ('legacy', 'disaggregated', 'supplemental' or 'traders in financial futures').}
+  \item{\code{asset class}: asset class for the underlying futures series ('climate',
+    'commodity', 'equity', 'fixed income' or 'currency').}
+  \item{\code{active contract ticker}: active contract ticker for the underlying futures
+    series.}
+  \item{\code{MIC}: ISO 10383 Codes for exchanges and market identification (MIC).
+    Identifies the exchange where the corresponding futures series trades.}
+  \item{\code{format}: CFTC report format ('legacy', 'disaggregated', 'supplemental' or
+    'traders in financial futures').}
   \item{\code{underlying}: underlying instrument ('futures only' or 'futures & options').}
   \item{\code{unit}: counting unit (number of 'contracts', 'traders' or 'total').}
   \item{\code{participant}: CFTC's trader classification. Report specific:
     \itemize{
       \item{legacy: 'commercial', 'non-commercial', 'non-reportable', 'total'.}
-      \item{disaggregated: 'managed money', 'producer/merchant/processor/user', 'swap dealers', 'other reportables'.}
-      \item{supplemental: 'commercial - non-CIT', 'non-commercial - non-CIT', 'index traders - non-CIT', 'index traders'.}
-      \item{traders in financial futures: 'asset manager/institutional', 'dealer/intermediary', 'leveraged funds', 'other reportables'.}
+      \item{disaggregated: 'managed money', 'producer/merchant/processor/user', 'swap dealers',
+        'other reportables'.}
+      \item{supplemental: 'commercial - non-CIT', 'non-commercial - non-CIT',
+        'index traders - non-CIT', 'index traders'.}
+      \item{traders in financial futures: 'asset manager/institutional', 'dealer/intermediary',
+        'leveraged funds', 'other reportables'.}
     }
   }
   \item{\code{position}: trader positions. Participant specific.
@@ -54,44 +62,61 @@
 tickers_CFTC
 }
 \description{
-The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' reports. See 'Details' below.
+The dataset includes Bloomberg tickers for CFTC's 'legacy', 'disaggregated',
+  'supplemental' and 'traders in financial futures' reports. See 'Details' section below.
 }
 \details{
-The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's open interest for markets in which 20 or more traders hold positions equal to or
-  above the reporting levels established by the CFTC. A trader must report his or her position if at the daily market close, their position is at or above the CFTC's
-  reporting level in any futures month or option expiration. A trader is determined to be commercial or non-commercial using the following rational: All traders'
-  reported futures positions in a commodity are classified as commercial if the trader uses futures contracts in that particular commodity for hedging as defined in
-  the CFTC's regulations (1.3(z). Along with a breakdown by commercial/non-commercial traders, the CFTC also reports 'disaggregated' categories of producer/merchant,
-  swap dealers, managed money and other reportables. When a contract does not meet the CFTC's minimum reporting requirement there will be no data reported and that
+The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's
+  open interest for markets in which 20 or more traders hold positions equal to or
+  above the reporting levels established by the CFTC. A trader must report his or her
+  position if at the daily market close, their position is at or above the CFTC's
+  reporting level in any futures month or option expiration. A trader is determined to
+  be commercial or non-commercial using the following rational: all traders'
+  reported futures positions in a commodity are classified as commercial if the trader
+  uses futures contracts in that particular commodity for hedging as defined in
+  the CFTC's regulations (1.3(z). Along with a breakdown by commercial/non-commercial
+  traders, the CFTC also reports 'disaggregated' categories of producer/merchant,
+  swap dealers, managed money and other reportables. When a contract does not meet the
+  CFTC's minimum reporting requirement there will be no data reported and that
   date will be left blank.
 
   SOURCE: \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm}
 
-  UPDATE INFO: Data is provided weekly on Friday at 3:30pm EST for the week ending on Tuesday.
-  Data is only reported to the CFTC for markets in which 20 or more traders hold positions equal to or above the reporting levels established by the CFTC. If the
-  minumum requirements are not met, no data will be posted for that week.
+  UPDATE INFO: Data is provided weekly on Friday at 3:30pm EST for the week ending on
+    Tuesday. Data is only reported to the CFTC for markets in which 20 or more traders hold
+    positions equal to or above the reporting levels established by the CFTC. If
+    the minumum requirements are not met, no data will be posted for that week.
 
-  CALCULATIONS: Data is taken directly from the source without any manipulation, except for the 'Net' tickers, which are calculated by taking the long contracts
-  minus the short contracts.
+  CALCULATIONS: Data is taken directly from the source without any manipulation, except
+    for the 'Net' tickers, which are calculated by taking the long contracts minus the
+    short contracts.
 
   SOURCE METHODOLOGY: \url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm}
 
-  Please note that "The Disaggregated COT report data for physical commodity markets can be re-aggregated to get back to the two categories of the COT report. The TFF
-  report, however, is not a disaggregation of the COT data for the financial futures markets. The traders classified into one of the four categories in the TFF report
-  may be drawn from either the "commercial" or "noncommercial" categories of traders in the legacy COT reports."
+  Please note that "The Disaggregated COT report data for physical commodity markets
+    can be re-aggregated to get back to the two categories of the COT report. The
+    TFF report, however, is not a disaggregation of the COT data for the financial
+    futures markets. The traders classified into one of the four categories in the
+    TFF report may be drawn from either the 'commercial' or 'noncommercial'
+    categories of traders in the legacy COT reports."
 
-  HISTORICAL CONSIDERATIONS: The Coffee Sugar and Cocoa Exchange and New York Cotton Exchange were part of the New York Board of Trade which merged with Intercontinental
-  Exchange (ICE) in January 2007.
-  If a holiday falls on a Tuesday, report dates for the Monday before or Wednesday after are modified to reflect the Tuesday date, as if there were no holiday.
+  HISTORICAL CONSIDERATIONS: The Coffee Sugar and Cocoa Exchange and New York Cotton
+    Exchange were part of the New York Board of Trade which merged with Intercontinental
+    Exchange (ICE) in January 2007. If a holiday falls on a Tuesday, report dates for
+    the Monday before or Wednesday after are modified to reflect the Tuesday date, as
+    if there were no holiday.
 
   DATA DISCOVERY: For more details see {COT<GO>} <HELP> on a Bloomberg terminal.
 
   RELATED SECTORS/FUNCTIONS: hit {FDM <GO>} on a Bloomberg terminal.
 
   TFF Traders in Financial Futures Report: \cr
-    Explanatory notes: \url{http://www.cftc.gov/idc/groups/public/@commitmentsoftraders/documents/file/tfmexplanatorynotes.pdf} \cr
-    Future's only: hit {ALLX TFF1<GO>} {ALLX TFF2<GO>} {ALLX TFF3<GO>} on a Bloomberg terminal. \cr
-    Future's & options combined: hit {ALLX TFC1<GO>} {ALLX TFC2<GO>} {ALLX TFC3<GO>} on a Bloomberg terminal.
+    Explanatory notes:
+      \url{http://www.cftc.gov/idc/groups/public/@commitmentsoftraders/documents/file/tfmexplanatorynotes.pdf} \cr
+    Future's only: hit {ALLX TFF1<GO>} {ALLX TFF2<GO>} {ALLX TFF3<GO>}
+    on a Bloomberg terminal. \cr
+    Future's & options combined: hit {ALLX TFC1<GO>} {ALLX TFC2<GO>}
+    {ALLX TFC3<GO>} on a Bloomberg terminal.
 
   ---CFTC ticker guide---
 
@@ -219,11 +244,14 @@ The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's o
   }
 }
 
-  This data represents the number of non-commerical long traders who must report  their positions for the stated futures and/or option contracts.
-  A trader must report his or her postion if at the daily market close, their position is at or above the CFTC's reporting level in any futures month or
-  option expiration.
-  A trader is determined to be commercial or non-commerical using the following rationale: all trader's reported futures positions in a commodity are
-  classifed  as commercial if the trader uses futures contracts in that particular commodity for hedging as defined in the CFTC's regulations (1.3(z)).
+  This data represents the number of non-commerical long traders who must report  their
+    positions for the stated futures and/or option contracts. A trader must report his
+    or her postion if at the daily market close, their position is at or above the CFTC's
+    reporting level in any futures month or option expiration. A trader is determined to
+    be commercial or non-commerical using the following rationale: all trader's reported
+    futures positions in a commodity are classifed  as commercial if the trader uses
+    futures contracts in that particular commodity for hedging as defined in the CFTC's
+    regulations (1.3(z)).
 }
 \seealso{
 \itemize{

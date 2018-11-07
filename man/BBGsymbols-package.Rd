@@ -4,7 +4,7 @@
 \name{BBGsymbols-package}
 \alias{BBGsymbols}
 \alias{BBGsymbols-package}
-\title{BBGsymbols: usefull Bloomberg tickers and field symbols conviniently packaged for R users}
+\title{BBGsymbols: Popular Bloomberg tickers and field symbols conviniently packaged for R users}
 \description{
 A collection of helper datasets for working with Bloomberg financial data in R.
 }
@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Oivier Bautheac \email{o.bautheac@gmail.com}
+\strong{Maintainer}: Oivier Bauthéac \email{o.bautheac@gmail.com}
 
 }
 \keyword{internal}

@@ -1,16 +1,12 @@
 Package: BBGsymbols
-Title: usefull Bloomberg tickers and field symbols conviniently packaged for R users
-Version: 0.0.0.9000
-Authors@R: person("Oivier", "Bautheac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
+Title: Popular Bloomberg tickers and field symbols conviniently packaged for R users
+Version: 0.0.1.0
+Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
 Description: A collection of helper datasets for working with Bloomberg financial data in R.
-Depends: R (>= 3.2.0)
+Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
-Suggests:
-    pullit,
-    storethat
-Remotes: 
-    bautheac/pullit,
-    bautheac/storethat
+Suggests: finRes
+Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no

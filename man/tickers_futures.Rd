@@ -57,7 +57,7 @@ tickers_futures
 }
 \description{
 The dataset includes Bloomberg active contract tickers for several popular futures series including
-commodity, currency, financial and index futures with underlyings from various asset classes.
+  commodity, currency, financial as well as index futures with underlyings from various asset classes.
 }
 \seealso{
 \itemize{

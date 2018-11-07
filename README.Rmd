@@ -1,0 +1,84 @@
+---
+title: BBGsymbols
+output: github_document
+---
+
+[![Build Status](https://travis-ci.com/bautheac/BBGsymbols.svg?branch=master)](https://travis-ci.com/bautheac/BBGsymbols)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/bautheac/BBGsymbols?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/BBGsymbols)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
+<style> body {text-align: justify} </style>
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, `load`, echo = FALSE, warning = FALSE}
+library(BBGsymbols)
+
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.path = "README-")
+data(list = c("fields", "months", "rolls", "tickers_CFTC", "tickers_futures"), package = "BBGsymbols")
+```
+
+  
+  
+## BBGsymbols  
+
+BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. It can be installed from [github](https://github.com/bautheac/BBGsymbols/) using: `devtools::install_github("bautheac/BBGsymbols")`.
+
+
+### fields
+
+The 'fields' dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include 'equity', refering to any equity like security, 'fund' encompassing any money managing entity and 'futures' covering the futures markets. The author welcomes any pull request that could contribute to expand the current coverage.  
+
+Dataset excerpt:  
+```{r `fields`, echo = FALSE}
+head(fields)
+```
+
+
+### months
+
+The 'months' dataset details the symbols used to refer to calendar months in Bloomberg and financial markets in general. It is particularly useful when working with financial deriviative instruments such as futures contracts.  
+ 
+Dataset excerpt:  
+```{r `months`, echo = FALSE}
+head(months)
+```
+
+
+### rolls
+
+The 'rolls' dataset details the symbols used to refer to the various roll types and adjustments available in Bloomberg when working with futures term structure contracts. These symbols can be used to construct bespoke tickers that allow the user to query Bloomberg for futures term structure data with the desired roll characteristics.
+
+Dataset excerpt:  
+```{r `rolls`, echo = FALSE}
+head(rolls)
+```
+
+
+### tickers_CFTC
+
+The 'tickers_CFTC' dataset gathers Bloomberg position data tickers for a number of futures series as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_CFTC` for details.  
+
+Dataset excerpt:  
+```{r `tickers_CFTC`, echo = FALSE}
+tail(tickers_CFTC)
+```
+
+
+### tickers_futures
+
+The 'tickers_futures' dataset gathers futures active contract Bloomberg tickers as well as a collection of qualitative information for several popular futures series including commodity, currency, financial and index futures with underlyings from various asset classes.  
+
+Dataset excerpt:  
+```{r `tickers_futures`, echo = FALSE}
+head(tickers_futures)
+```
+
+
+
+### finRes
+
+Although BBGsymbols is self-contained with consumption value on its own, it belongs to [finRes](https://bautheac.github.io/finRes/) where it plays an important role in providing support to [pullit](https://github.io/bautheac/pullit/) and [storethat](https://github.io/bautheac/storethat/) for collecting, storing and retrieving financial data as well as facilitating their integrity.
+
+
+
