@@ -65,11 +65,11 @@
 <!-- README.md is generated from README.Rmd. Please edit that file --><div id="bbgsymbols" class="section level2">
 <h2 class="hasAnchor">
 <a href="#bbgsymbols" class="anchor"></a>BBGsymbols</h2>
-<p>BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. It can be installed from <a href="https://github.com/bautheac/BBGsymbols/">github</a> using: <code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">devtools::install_github("bautheac/BBGsymbols")</a></code>.</p>
+<p>BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. Install from <a href="https://github.com/bautheac/BBGsymbols/">github</a> with: <code><a href="http://www.rdocumentation.org/packages/devtools/topics/reexports">devtools::install_github("bautheac/BBGsymbols")</a></code>.</p>
 <div id="fields" class="section level3">
 <h3 class="hasAnchor">
 <a href="#fields" class="anchor"></a>fields</h3>
-<p>The ‘fields’ dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include ‘equity’, refering to any equity like security, ‘fund’ encompassing any money managing entity and ‘futures’ covering the futures markets. The author welcomes any pull request that could contribute to expand the current coverage.</p>
+<p>The ‘fields’ dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include ‘equity’, refering to any equity like security, ‘fund’ encompassing any money managing entity and ‘futures’ covering the futures markets. The author welcomes pull requests that could help expanding the current coverage.</p>
 <p>Dataset excerpt:</p>
 <pre><code>#&gt;   instrument      book                type subtype section subsection
 #&gt; 1     equity key stats adjusted highlights    &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;
@@ -128,9 +128,8 @@
 </div>
 <div id="tickers_cftc" class="section level3">
 <h3 class="hasAnchor">
-<a href="#tickers_cftc" class="anchor"></a>tickers_CFTC</h3>
-<p>The ‘tickers_CFTC’ dataset gathers Bloomberg position data tickers for a number of futures series as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the ‘legacy’, ‘disaggregated’, ‘supplemental’ and ‘traders in financial futures’ (TFF) reports. See <code><a href="reference/tickers_CFTC.html">?tickers_CFTC</a></code> for details.</p>
-<p>Dataset excerpt:</p>
+<a href="#tickers_cftc" class="anchor"></a>tickers_cftc</h3>
+<p>The ‘tickers_cftc’ dataset gathers Bloomberg position data tickers for a number of futures series. These tickers allow direct retrieval from Bloomberg via pullit of corresponding position data as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the ‘legacy’, ‘disaggregated’, ‘supplemental’ and ‘traders in financial futures’ (TFF) reports. See <code><a href="reference/tickers_cftc.html">?tickers_cftc</a></code> for details. Dataset excerpt:</p>
 <pre><code>#&gt;                    name  asset class active contract ticker  MIC format
 #&gt; 1: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
 #&gt; 2: LIBOR rate - 1-month fixed income             EMA Comdty XCME legacy
