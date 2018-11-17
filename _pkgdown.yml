@@ -1,0 +1,25 @@
+title: BBGsymbols
+
+url: https://bautheac.github.io/BBGsymbols
+
+reference:
+  - title: data fields
+    contents:
+      - fields
+  - title: tickers
+    contents:
+      - tickers_futures
+      - tickers_CFTC
+  - title: others
+    contents:
+      - rolls
+      - months
+
+navbar:
+  title: ~
+  type: default
+  left:
+    - text: home
+      href: index.html
+    - text: datasets
+      href: reference/index.html

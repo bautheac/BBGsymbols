@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/index.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/BBGsymbols-package.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/fields.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/months.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/rolls.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/tickers_CFTC.html</loc>
+  </url>
+  <url>
+    <loc>https://bautheac.github.io/BBGsymbols/reference/tickers_futures.html</loc>
+  </url>
+</urlset>
