@@ -15,7 +15,7 @@ output: github_document
 library(BBGsymbols)
 
 knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, comment = "#>", fig.path = "README-")
-data(list = c("fields", "months", "rolls", "tickers_cftc", "tickers_futures"), package = "BBGsymbols")
+data(list = c("fields", "months", "rolls", "tickers_CFTC", "tickers_futures"), package = "BBGsymbols")
 ```
 
   
@@ -55,12 +55,12 @@ head(rolls)
 ```
 
 
-### tickers_cftc
+### tickers_CFTC
 
-The 'tickers_cftc' dataset gathers Bloomberg position data tickers for a number of futures series. These tickers allow direct retrieval from Bloomberg via pullit of corresponding position data as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_cftc` for details.
+The 'tickers_CFTC' dataset gathers Bloomberg position data tickers for a number of futures series. These tickers allow direct retrieval from Bloomberg via pullit of corresponding position data as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_CFTC` for details.
 Dataset excerpt:  
-```{r `tickers_cftc`}
-tail(tickers_cftc)
+```{r `tickers_CFTC`}
+tail(tickers_CFTC)
 ```
 
 

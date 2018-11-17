@@ -98,14 +98,14 @@ Dataset excerpt:
     #> 5: type      N Relative to first notice
     #> 6: type      O     At option expiration
 
-### tickers\_cftc
+### tickers\_CFTC
 
-The ‘tickers\_cftc’ dataset gathers Bloomberg position data tickers for
+The ‘tickers\_CFTC’ dataset gathers Bloomberg position data tickers for
 a number of futures series. These tickers allow direct retrieval from
 Bloomberg via pullit of corresponding position data as reported by the
 US Commodity Futures Trading Commission (CFTC) in a collection of weekly
 market reports including the ‘legacy’, ‘disaggregated’, ‘supplemental’
-and ‘traders in financial futures’ (TFF) reports. See `?tickers_cftc`
+and ‘traders in financial futures’ (TFF) reports. See `?tickers_CFTC`
 for details. Dataset
     excerpt:
 
