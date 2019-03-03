@@ -4,7 +4,7 @@
 \name{BBGsymbols-package}
 \alias{BBGsymbols}
 \alias{BBGsymbols-package}
-\title{BBGsymbols: Popular Bloomberg tickers and field symbols conviniently packaged for R users}
+\title{BBGsymbols: Popular Bloomberg tickers and field symbols conveniently packaged for R users}
 \description{
 A collection of helper datasets for working with Bloomberg financial data in R.
 }

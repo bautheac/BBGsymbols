@@ -1,5 +1,5 @@
 Package: BBGsymbols
-Title: Popular Bloomberg tickers and field symbols conviniently packaged for R users
+Title: Popular Bloomberg tickers and field symbols conveniently packaged for R users
 Version: 0.0.1.0
 Authors@R: person("Oivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
 Description: A collection of helper datasets for working with Bloomberg financial data in R.

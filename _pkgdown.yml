@@ -9,7 +9,7 @@ reference:
   - title: tickers
     contents:
       - tickers_futures
-      - tickers_CFTC
+      - tickers_cftc
   - title: others
     contents:
       - rolls

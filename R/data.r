@@ -255,7 +255,7 @@
 #'
 #' @importClassesFrom data.table data.table
 #'
-"tickers_CFTC"
+"tickers_cftc"
 
 
 
