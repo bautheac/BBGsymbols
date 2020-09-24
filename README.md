@@ -7,8 +7,6 @@ BBGsymbols
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## BBGsymbols
-
 BBGsymbols provides a collection of Bloomberg related helper datasets
 conveniently packaged for consumption in R. Install from
 [github](https://github.com/bautheac/BBGsymbols/) with:

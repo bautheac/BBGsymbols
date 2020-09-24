@@ -16,9 +16,6 @@ knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, comment = "#>", fig.path = 
 data(list = c("fields", "months", "rolls", "tickers_cftc", "tickers_futures"), package = "BBGsymbols")
 ```
 
-  
-  
-## BBGsymbols  
 
 BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. Install from [github](https://github.com/bautheac/BBGsymbols/) with: `devtools::install_github("bautheac/BBGsymbols")`.
 
