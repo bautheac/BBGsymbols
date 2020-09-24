@@ -4,7 +4,8 @@
 \name{tickers_futures}
 \alias{tickers_futures}
 \title{Bloomberg tickers for various popular futures series}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{ticker}: active contract ticker for the futures series.}
   \item{\code{name}: corresponding futures series's underlying name.}
@@ -48,7 +49,8 @@
     and the last character is a check-digit. An identifier is assigned to instruments of all asset classes, is unique to an individual instrument and once
     issued will not change for an instrument. For equity instruments an identifier is issued per instrument per trading venue.}
   \item{\code{description}: descriptive elements for the corresponding futures series.}
-}}
+}
+}
 \source{
 Bloomberg
 }

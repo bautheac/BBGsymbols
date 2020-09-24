@@ -8,6 +8,6 @@ Imports: data.table (>= 1.11.4)
 License: CC0
 Encoding: UTF-8
 LazyData: no
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 URL: https://bautheac.github.oi/BBGsymbols
 BugReports: https://github.com/bautheac/BBGsymbols/issues
