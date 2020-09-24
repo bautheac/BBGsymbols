@@ -4,11 +4,13 @@
 \name{months}
 \alias{months}
 \title{Futures delivery month symbols}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{name: month name.}
   \item{symbol: corresponding symbol.}
-}}
+}
+}
 \source{
 \url{https://www.cmegroup.com/month-codes.html?redirect=/product-codes-listing/month-codes.html}
 }

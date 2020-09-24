@@ -3,8 +3,6 @@ title: BBGsymbols
 output: github_document
 ---
 
-[![Build Status](https://travis-ci.com/bautheac/BBGsymbols.svg?branch=master)](https://travis-ci.com/bautheac/BBGsymbols)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/bautheac/BBGsymbols?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/BBGsymbols)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <style> body {text-align: justify} </style>
@@ -25,9 +23,9 @@ data(list = c("fields", "months", "rolls", "tickers_cftc", "tickers_futures"), p
 BBGsymbols provides a collection of Bloomberg related helper datasets conveniently packaged for consumption in R. Install from [github](https://github.com/bautheac/BBGsymbols/) with: `devtools::install_github("bautheac/BBGsymbols")`.
 
 
-### fields
+### Fields
 
-The 'fields' dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writting include 'equity', refering to any equity like security, 'fund' encompassing any money managing entity and 'futures' covering the futures markets. The author welcomes pull requests that could help expanding the current coverage.  
+The 'fields' dataset gathers Bloomberg query fields that have been carefully selected over time through experience, saving the user long hours of browsing the depths of Bloomberg for the fitting fields. It provides popular historical and contemporaneous data fields that are likely to provide the necessary information and beyond for any rigorous research or more applied work in finance and financial economics. Financial instruments covered at the time of writing include 'equity', referring to any equity like security, 'fund' encompassing any money managing entity and 'futures' covering the futures markets. The author welcomes pull requests that could help expanding the current coverage.  
 
 Dataset excerpt:  
 ```{r `fields`}
@@ -35,9 +33,9 @@ head(fields)
 ```
 
 
-### months
+### Months
 
-The 'months' dataset details the symbols used to refer to calendar months in Bloomberg and financial markets in general. It is particularly useful when working with financial deriviative instruments such as futures contracts.  
+The 'months' dataset details the symbols used to refer to calendar months in Bloomberg and financial markets in general. It is particularly useful when working with financial derivative instruments such as futures contracts.  
  
 Dataset excerpt:  
 ```{r `months`}
@@ -45,7 +43,7 @@ head(months)
 ```
 
 
-### rolls
+### Rolls
 
 The 'rolls' dataset details the symbols used to refer to the various roll types and adjustments available in Bloomberg when working with futures term structure contracts. These symbols can be used to construct bespoke tickers that allow the user to query Bloomberg for futures term structure data with the desired roll characteristics.
 
@@ -55,7 +53,7 @@ head(rolls)
 ```
 
 
-### tickers_cftc
+### CFTC tickers
 
 The 'tickers_cftc' dataset gathers Bloomberg position data tickers for a number of futures series. These tickers allow direct retrieval from Bloomberg via pullit of corresponding position data as reported by the US Commodity Futures Trading Commission (CFTC) in a collection of weekly market reports including the 'legacy', 'disaggregated', 'supplemental' and 'traders in financial futures' (TFF) reports. See `?tickers_cftc` for details.
 Dataset excerpt:  
@@ -64,7 +62,7 @@ tail(tickers_cftc)
 ```
 
 
-### tickers_futures
+### Futures tickers
 
 The 'tickers_futures' dataset gathers futures active contract Bloomberg tickers as well as a collection of qualitative information for several popular futures series including commodity, currency, financial and index futures with underlyings from various asset classes.  
 

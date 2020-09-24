@@ -4,12 +4,14 @@
 \name{rolls}
 \alias{rolls}
 \title{Roll symbols for futures term structure Bloomberg ticker construction}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
   \item{\code{symbol}: roll type or adjustment symbol.}
   \item{\code{name}: corresponding roll type or adjustment name.}
-}}
+}
+}
 \source{
 Bloomberg
 }

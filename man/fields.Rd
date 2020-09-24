@@ -4,14 +4,16 @@
 \name{fields}
 \alias{fields}
 \title{Field symbols for Bloomberg financial data}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{instrument}: underlying financial instrument type (futures, equity, fund, etc.).}
   \item{\code{book}: data book.}
   \item{\code{type:subsection}: data classification elements.}
   \item{\code{name}: field name.}
   \item{\code{symbol}: corresponding Bloomberg data field symbol.}
-}}
+}
+}
 \source{
 Bloomberg
 }

@@ -4,7 +4,8 @@
 \name{tickers_cftc}
 \alias{tickers_cftc}
 \title{US CFTC futures position Bloomberg tickers}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 \itemize{
   \item{\code{name}: name of the futures series.}
   \item{\code{asset class}: asset class for the underlying futures series ('climate',
@@ -49,7 +50,8 @@
     }
   }
   \item{\code{ticker}: corresponding Bloomberg ticker.}
-}}
+}
+}
 \source{
 \itemize{
     \item{\url{http://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm}}
