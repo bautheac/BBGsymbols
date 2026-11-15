@@ -27,7 +27,7 @@ Helper dataset for Bloomberg futures term structure ticker construction.
 \itemize{
   \item{function \code{\link[pullit]{futures_ticker}} in package \href{https://github.com/bautheac/pullit/}{\pkg{pullit}}.}
   \item{"GFUT <GO>" &/or "DOCS #2072138 <GO>" on a Bloomberg terminal.}
-  \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite in general, in particular the
+  \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite in general, in particular the
     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 }

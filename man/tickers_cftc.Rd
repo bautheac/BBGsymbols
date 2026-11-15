@@ -260,7 +260,7 @@ The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's
     \item{"CFTC <GO>" on a Bloomberg terminal.}
     \item{\href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages
-    from the \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite.}
+    from the \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite.}
   }
 }
 \keyword{datasets}

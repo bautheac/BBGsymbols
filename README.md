@@ -177,7 +177,7 @@ head(tickers_futures)
 
 Although [BBGsymbols](https://github.com/bautheac/BBGsymbols/) is
 self-contained it belongs to the
-[finRes](https://bautheac.github.io/finRes/) suite of packages where it
+[finRes](https://dev.bautheac.net/finRes/) suite of packages where it
 plays an important role in providing support to the
 [pullit](https://github.io/bautheac/pullit/) and
 [storethat](https://github.io/bautheac/storethat/) packages for

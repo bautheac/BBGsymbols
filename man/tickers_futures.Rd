@@ -64,7 +64,7 @@ The dataset includes Bloomberg active contract tickers for several popular futur
 \seealso{
 \itemize{
     \item{"GFUT <GO>" on a Bloomberg terminal.}
-    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
   }

@@ -63,7 +63,7 @@
 #'     \item{"CFTC <GO>" on a Bloomberg terminal.}
 #'     \item{\href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages
-#'     from the \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite.}
+#'     from the \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite.}
 #'   }
 #'
 #' @details The Commitments of Traders (COT) reports provide a breakdown of each Tuesday's
@@ -318,7 +318,7 @@
 #' @seealso
 #'   \itemize{
 #'     \item{"GFUT <GO>" on a Bloomberg terminal.}
-#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
 #'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #'   }
@@ -347,7 +347,7 @@
 #' @seealso
 #'   \itemize{
 #'     \item{Data field search monitor on a Bloomberg terminal.}
-#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
 #'     href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #'   }
@@ -371,7 +371,7 @@
 #'
 #' @seealso
 #'   \itemize{
-#'     \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+#'     \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
 #'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #'   }
@@ -401,7 +401,7 @@
 #' \itemize{
 #'   \item{function \code{\link[pullit]{futures_ticker}} in package \href{https://github.com/bautheac/pullit/}{\pkg{pullit}}.}
 #'   \item{"GFUT <GO>" &/or "DOCS #2072138 <GO>" on a Bloomberg terminal.}
-#'   \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite in general, in particular the
+#'   \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite in general, in particular the
 #'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #' }
