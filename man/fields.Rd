@@ -27,7 +27,7 @@ Helper dataset for working with Bloomberg in R.
 \seealso{
 \itemize{
     \item{Data field search monitor on a Bloomberg terminal.}
-    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
     href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
   }

@@ -22,7 +22,7 @@ Lists the Street convention symbols for futures delivery month.
 }
 \seealso{
 \itemize{
-    \item{The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite, in particular the
+    \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
   }
