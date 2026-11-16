@@ -9,3 +9,4 @@
 ^appveyor\.yml$
 ^pkgdown-site$
 ^\.github$
+^pkgdown$
