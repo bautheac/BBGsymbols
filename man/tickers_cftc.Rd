@@ -5,7 +5,7 @@
 \alias{tickers_cftc}
 \title{US CFTC futures position Bloomberg tickers}
 \format{
-A \linkS4class{data.table}. Columns include:
+A \link[data.table:data.table-class]{data.table}. Columns include:
 \itemize{
   \item{\code{name}: name of the futures series.}
   \item{\code{asset class}: asset class for the underlying futures series ('climate',

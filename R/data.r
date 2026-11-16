@@ -4,7 +4,7 @@
 #'   Trading Commission (CFTC)'s 'legacy', 'disaggregated', 'supplemental' and 'traders
 #'   in financial futures' reports. See 'Details' section below.
 #'
-#' @format A \linkS4class{data.table}. Columns include:
+#' @format A \link[data.table:data.table-class]{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{name}: name of the futures series.}
 #'   \item{\code{asset class}: asset class for the underlying futures series ('climate',
@@ -267,7 +267,7 @@
 #' @description The dataset includes Bloomberg active contract tickers for several popular futures series including
 #'   commodity, currency, financial as well as index futures with underlyings from various asset classes.
 #'
-#' @format A \linkS4class{data.table}. Columns include:
+#' @format A \link[data.table:data.table-class]{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{ticker}: active contract ticker for the futures series.}
 #'   \item{\code{name}: corresponding futures series's underlying name.}
@@ -355,7 +355,7 @@
 #'   \itemize{
 #'     \item{Data field search monitor on a Bloomberg terminal.}
 #'     \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
-#'     href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+#'     \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
 #'   }
 #'
@@ -368,7 +368,7 @@
 #'
 #' @description Lists the Street convention symbols for futures delivery month.
 #'
-#' @format A \linkS4class{data.table}. Columns include:
+#' @format A \link[data.table:data.table-class]{data.table}. Columns include:
 #' \itemize{
 #'   \item{name: month name.}
 #'   \item{symbol: corresponding symbol.}
@@ -395,7 +395,7 @@
 #'   Provides roll type and roll adjustment symbols to use along days and months offsets in
 #'   constructing Bloomberg futures term structure tickers.
 #'
-#' @format A \linkS4class{data.table}. Columns include:
+#' @format A \link[data.table:data.table-class]{data.table}. Columns include:
 #' \itemize{
 #'   \item{\code{roll}: divides variables between roll type ('type') and roll adjustment (adjustment) variables.}
 #'   \item{\code{symbol}: roll type or adjustment symbol.}

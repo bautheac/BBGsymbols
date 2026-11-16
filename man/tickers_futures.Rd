@@ -5,7 +5,7 @@
 \alias{tickers_futures}
 \title{Bloomberg tickers for various popular futures series}
 \format{
-A \linkS4class{data.table}. Columns include:
+A \link[data.table:data.table-class]{data.table}. Columns include:
 \itemize{
   \item{\code{ticker}: active contract ticker for the futures series.}
   \item{\code{name}: corresponding futures series's underlying name.}

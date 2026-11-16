@@ -36,7 +36,7 @@ A given \code{symbol} can appear several times, once per \code{instrument} and \
 \itemize{
     \item{Data field search monitor on a Bloomberg terminal.}
     \item{The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite, in particular the
-    href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
+    \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
     \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages.}
   }
 }
