@@ -1,6 +1,14 @@
 title: BBGsymbols
 
 url: https://dev.bautheac.net/BBGsymbols
+destination: pkgdown-site
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "Source Sans Pro"}
+    heading_font: {google: "Source Sans Pro"}
+    code_font: {google: "Source Code Pro"}
+    font-size-base: 1.25rem
 
 reference:
   - title: data fields
@@ -14,12 +22,3 @@ reference:
     contents:
       - rolls
       - months
-
-navbar:
-  title: ~
-  type: default
-  left:
-    - text: home
-      href: index.html
-    - text: datasets
-      href: reference/index.html
