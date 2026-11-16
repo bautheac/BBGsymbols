@@ -5,13 +5,16 @@
 \alias{fields}
 \title{Field symbols for Bloomberg financial data}
 \format{
-A \linkS4class{data.table}. Columns include:
+A tibble with 959 rows. Columns include:
 \itemize{
   \item{\code{instrument}: underlying financial instrument type (futures, equity, fund, etc.).}
   \item{\code{book}: data book.}
-  \item{\code{type:subsection}: data classification elements.}
+  \item{\code{type}, \code{subtype}, \code{section}, \code{subsection}: data classification elements
+    (increasingly specific; \code{NA} where not applicable).}
   \item{\code{name}: field name.}
+  \item{\code{id}: Bloomberg data field identifier.}
   \item{\code{symbol}: corresponding Bloomberg data field symbol.}
+  \item{\code{description}: Bloomberg data field description.}
 }
 }
 \source{
@@ -23,6 +26,11 @@ fields
 \description{
 Helper dataset for working with Bloomberg in R.
   Provides field symbols for various security type-data type combinations
+}
+\details{
+A given \code{symbol} can appear several times, once per \code{instrument} and \code{book}
+  (e.g. \code{PX_OPEN} for equity, futures, fund and index market data). Filter on \code{instrument}
+  and \code{book} before joining on \code{symbol}.
 }
 \seealso{
 \itemize{
