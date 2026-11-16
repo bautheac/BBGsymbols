@@ -5,7 +5,7 @@
 \alias{months}
 \title{Futures delivery month symbols}
 \format{
-A \linkS4class{data.table}. Columns include:
+A \link[data.table:data.table-class]{data.table}. Columns include:
 \itemize{
   \item{name: month name.}
   \item{symbol: corresponding symbol.}
